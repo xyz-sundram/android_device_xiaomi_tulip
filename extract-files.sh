@@ -16,6 +16,12 @@ function blob_fixup() {
         vendor/lib/libMiWatermark.so)
             grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
+        vendor/lib64/com.fingerprints.extension@1.0.so)
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+            ;;
+        vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so)
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+            ;;
     esac
 }
 
