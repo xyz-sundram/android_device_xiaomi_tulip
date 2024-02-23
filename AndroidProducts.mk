@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tulip.mk
+    $(LOCAL_DIR)/voltage_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_tulip-user \
-    lineage_tulip-userdebug \
-    lineage_tulip-eng
+    voltage_tulip-user \
+    voltage_tulip-userdebug \
+    voltage_tulip-eng
