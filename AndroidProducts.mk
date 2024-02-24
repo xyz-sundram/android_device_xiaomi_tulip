@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_tulip.mk
+    $(LOCAL_DIR)/aospa_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_tulip-user \
-    voltage_tulip-userdebug \
-    voltage_tulip-eng
+    aospa_tulip-user \
+    aospa_tulip-userdebug \
+    aospa_tulip-eng
