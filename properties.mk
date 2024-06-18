@@ -19,3 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Cutout
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_hide_display_cutout=true
+
+# Maintainer String
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.spos.maintainer=Sundram
